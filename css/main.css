@@ -78,3 +78,11 @@ hr {
   padding: 2px;
   color: black;
 }
+
+ul.share-buttons{
+  position: fixed;
+  top: 300px;
+  left: 20px;
+  list-style: none;
+  padding: 0;
+}
