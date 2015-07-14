@@ -1,0 +1,78 @@
+/* GENERAL STUFF */
+body {
+  background-color: #EEE;
+  padding-top: 70px;
+}
+
+#map-embed {
+  margin-top: 4em;
+}
+
+hr {
+  border-color: #DDD3D3 -moz-use-text-color -moz-use-text-color;
+}
+
+.dashboard {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.dashboard h1 {
+  font-weight: 900;
+  color: #aaaaaa;
+  font-size: 4em;
+}
+
+.jumbotron {
+  padding-bottom: 10px;
+}
+ #dash {
+  text-align: center;
+}
+ #logo {
+  width: 400px;
+}
+@media (max-width: 400px) {
+  #logo {
+    width: 200px;
+  }
+}
+@media (max-width: 767px) {
+  #logo {
+    width: 300px;
+  }
+}
+
+#tip{
+    border: 0px dotted #C0C0C0 ;
+    font: 12px sans-serif;
+}
+
+#tipcol{
+    margin: 0px;
+    border: 0px;
+}
+
+#tipname{
+    padding: 5px 5px 5px 5px;
+    border: 3px;
+    border-style: solid none solid none; 
+    border-color: #EEE;
+    font-style: bold;
+    color: white;
+}
+
+#tipnr{
+    padding: 5px 5px 5px 10px;
+    border: 3px;
+    border-style: solid solid solid none; 
+    border-color: #EEE;
+    text-align: right;
+    color: white;
+}
+#tipcap{
+  text-align: left;
+  font-size: 16px;
+  padding: 2px;
+  color: black;
+}
