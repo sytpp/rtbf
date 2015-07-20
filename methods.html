@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" itemscope itemtype="http://schema.org/Article">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/c3.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- FIXED NAVBAR -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">[EN]</a></li>
+          <li class="active"><a href="methods.html">Data + Processing</a>
+          <li><a href="media.html">Media</a>
+          <li><a href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+ <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+              
+              <h2 class="text-left">Data Source</h2>
+              <br>
+              <p class="text-justify">The numeric data we refer to on this website was obtained from archived versions of Google's Transparency Report, available via Wayback Machine. You can find snap-shots of the website <a href="http://web.archive.org/web/20150630225417*/https://www.google.com/transparencyreport/removals/europeprivacy/">here</a> (depending on your country settings you may see different snapshot dates).<br> 
+              The data was not visualised on the front-end of <a href="http://www.google.com/transparencyreport/removals/europeprivacy/">Google's Transparency Report</a> but available in the source code in JSON format under the variable name <i>AGGREGATE_DATA</i>. All snapshots we found before March 23rd 2015 do contain the breakdown of the data into issue types, while all snapshots after March don't contain the issue types anymore. Have a look at the current source code of Google's Transparency Report for comparison.<br><br> 
+              We analysed all datasets obtained from these snapshots from October 2014 to March 23rd 2015. The overall ratios, both regarding issues and outcomes, don't very much over time, so the data we chose to present here reflects the <a href="view-source:http://web.archive.org/web/20150326090702/https://www.google.com/transparencyreport/removals/europeprivacy/">most recent data from March 23rd 2015</a>.</p>
+
+ 
+              <h2 class="text-left">Data Structure</h2>
+              <br>
+              <p class="text-justify">The data object itself is contained in the bare html file of the Transparency Report in JSON format, named <i>AGGREGATE_DATA</i>. That's not a really a nice way to structure a website (I am sure any Google front-end developer would be happy to lecture on 'why') - but it works.<br>
+              <i>AGGREGATE_DATA</i> breaks down into country names, issue types and respective outcomes within these groups. Counts are available in either number of request or number of urls, for one request to Google can contain multiple urls to be de-linked from searches. Below is an exerpt from the JSON file, showing the data for Romania.
+              </p>
+              <pre><code>"RO": { 
+  "name": "Romania", 
+  "requests": {
+    "all": {
+      "pending": 51, "need_more_info": 568, "rejected": 2023, "complied": 1147, "total": 4073
+    }, 
+    "issues": {
+      "political": {
+          "pending": 1, "need_more_info": 30, "rejected": 159, "complied": 91, "total": 282}, 
+      "cp": {
+          "pending": 0, "need_more_info": 1, "rejected": 15, "complied": 1, "total": 17}, 
+      "private_personal_info": {
+          "pending": 49, "need_more_info": 520, "rejected": 1780, "complied": 1052, "total": 3439}, 
+      "public_figure": {
+          "pending": 0, "need_more_info": 5, "rejected": 66, "complied": 12, "total": 83}, 
+      "serious_crime": {
+          "pending": 2, "need_more_info": 35, "rejected": 60, "complied": 14, "total": 111}
+    }
+  }, 
+  "urls": {
+    "all": {
+      "pending": 236, "need_more_info": 2167, "rejected": 10419, "complied": 3835, "total": 16870
+    }, 
+    "issues": {
+      "political": {
+          "pending": 1, "need_more_info": 131, "rejected": 945, "complied": 237, "total": 1317}, 
+      "cp": {
+          "pending": 0, "need_more_info": 4, "rejected": 78, "complied": 1, "total": 83}, 
+      "private_personal_info": {
+          "pending": 230, "need_more_info": 1949, "rejected": 8776, "complied": 3571, "total": 14719}, 
+      "public_figure": {
+          "pending": 0, "need_more_info": 6, "rejected": 633, "complied": 43, "total": 693}, 
+      "serious_crime": {
+          "pending": 6, "need_more_info": 183, "rejected": 382, "complied": 20, "total": 594}
+    }
+  } 
+},
+
+"BE": { ... },
+"FR": { ... },
+"UK": { ... },
+"DE": { ... },
+ ...
+
+              </code></pre>
+
+              <h2 class="text-left">Data Processing</h2>
+              <br>
+              <p class="text-justify">The data for each country is broken down in terms of numbers of requests and numbers of URLs. On average one request contains 3-5 URLs to be de-linked but initial analysis suggests that the category Google assigns to URLs does not neccessarily match the respective request. To avoid overcomplicating things, we therefore chose to visualise the number of requests for this initial insight.
+              <br><br>
+              To make use of the most detailed level the data offers, we used the numeric values at the deepest leaf of the tree structure, i.e. deepest breakdown-level, to calculate sums and percetages per country. Importantly, one of these deepest leaves is named 'total' suggesting that this is the sum of the remaining 4 leaves (i.e. outcomes) in each branch. However, the outcomes 'complied', 'rejected','need_more_info' and 'pending' don't add up to 'total'; in many countries and issue types, there is a difference (for example: requests from Romania falling in issue type 'political' resolve to "pending": 1, "need_more_info": 30, "rejected": 159, "complied": 91, adding up to 281, the "total" however is 282). We accounted for these requests which did not have any assigned outcome labeling them 'undefined'. All percentages refer to the leaf labeled "total" as 100%.
+              <br><br>
+              Scraping and processing was done in the programming language R (R version 3.2.0 (2015-04-16)), a commented script is available via GitHub <a href="...">here</a>.  
+              <br>
+              Conceptually it does the following:
+              </p>
+
+              <pre><code>
+for each LOGDATE
+    for each COUNTRY
+        for each UNIT TYPE (i.e. 'requests', 'urls')
+            for each ISSUE TYPE
+                set 'undefined' = 'total' - SUM('complied','rejected','pending','need_more_info')
+              </code></pre>
+
+              <p class="text-justify">The resulting <a href="...">data table</a> contains six columns: CountryName, CountryCode, CountUnit (requests or urls), Issue, Outcome, VALUE (the count), logdate. I.e.:</p>
+
+              <pre><code>
+CountryName CountryCode CountUnit     Issue           Outcome         VALUE   logdate
+
+Austria     AT          requests      public_figure   rejected        20      2014-10-13
+Austria     AT          requests      public_figure   complied        10      2014-10-13
+Austria     AT          requests      public_figure   pending          3      2014-10-13
+Austria     AT          requests      public_figure   need_more_info   2      2014-10-13
+Austria     AT          requests      political       rejected        16      2014-10-13
+Austria     AT          requests      political       complied         3      2014-10-13
+.
+.
+.
+              </code></pre>              
+
+              <p class="text-justify">All further analysis is based on this table.</p>
+
+        </div>
+      </div>
+ </div>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement( o ),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65139102-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+
+</html>
