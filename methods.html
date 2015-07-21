@@ -28,11 +28,18 @@
       </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li><a href="index.html">[EN]</a></li>
-          <li class="active"><a href="methods.html">Data + Processing</a>
-          <li><a href="media.html">Media</a>
-          <li><a href="about.html">About</a>
+
+          <li class="dropdown">
+            <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Google's Data<span class="caret"></span></a>
+            <ul class="dropdown-menu" id="submenu">
+              <li><a href="index.html">English</a></li>
+              <li><a href="index.html" >Español</a></li>
+            </ul>
           </li>
+
+          <li class="active"><a href="methods.html">Methods</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
     </div>
@@ -107,7 +114,7 @@
               <br><br>
               To make use of the most detailed level the data offers, we used the numeric values at the deepest leaf of the tree structure, i.e. deepest breakdown-level, to calculate sums and percetages per country. Importantly, one of these deepest leaves is named 'total' suggesting that this is the sum of the remaining 4 leaves (i.e. outcomes) in each branch. However, the outcomes 'complied', 'rejected','need_more_info' and 'pending' don't add up to 'total'; in many countries and issue types, there is a difference (for example: requests from Romania falling in issue type 'political' resolve to "pending": 1, "need_more_info": 30, "rejected": 159, "complied": 91, adding up to 281, the "total" however is 282). We accounted for these requests which did not have any assigned outcome labeling them 'undefined'. All percentages refer to the leaf labeled "total" as 100%.
               <br><br>
-              Scraping and processing was done in the programming language R (R version 3.2.0 (2015-04-16)), a commented script is available via GitHub <a href="...">here</a>.  
+              Scraping and processing was done in the programming language R version 3.2.0 (2015-04-16). A commented script and a list of Wayback Machine snapshots it is ingesting is available via GitHub <a href="https://github.com/sytpp/rtbf/tree/gh-pages/data-analysis">here</a>.  
               <br>
               Conceptually it does the following:
               </p>
@@ -120,7 +127,7 @@ for each LOGDATE
                 set 'undefined' = 'total' - SUM('complied','rejected','pending','need_more_info')
               </code></pre>
 
-              <p class="text-justify">The resulting <a href="...">data table</a> contains six columns: CountryName, CountryCode, CountUnit (requests or urls), Issue, Outcome, VALUE (the count), logdate. I.e.:</p>
+              <p class="text-justify">The resulting <a href="https://raw.githubusercontent.com/sytpp/rtbf/gh-pages/data-analysis/dataTIMESERIES.csv">data table</a> contains six columns: CountryName, CountryCode, CountUnit (requests or urls), Issue, Outcome, VALUE (the count), logdate. I.e.:</p>
 
               <pre><code>
 CountryName CountryCode CountUnit     Issue           Outcome         VALUE   logdate
@@ -136,7 +143,7 @@ Austria     AT          requests      political       complied         3      20
 .
               </code></pre>              
 
-              <p class="text-justify">All further analysis is based on this table.</p>
+              <p class="text-justify">All further analysis on this page is based on this extract.</p>
 
         </div>
       </div>

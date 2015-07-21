@@ -90,3 +90,8 @@ ul.share-buttons{
 ul.share-buttons li {
     padding: 3px 0px;
 }
+
+#submenu{
+  background-color: white;
+  border-style: none;
+}
