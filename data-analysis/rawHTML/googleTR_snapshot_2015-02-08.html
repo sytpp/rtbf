@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html class="google" lang="sv">
+  <head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app11.us.archive.org";archive_analytics.values.server_ms=137;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+
+    <script>
+(function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
+    </script>
+    <meta charset="utf-8">
+    <meta content="initial-scale=1, minimum-scale=1, width=device-width" name="viewport">
+    <title>
+      Europeisk integritet i sökningar – Insynsrapport – Google
+    </title>
+    <script>
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', "UA-34652104-1"]);
+  _gaq.push(['_setCookiePath', "/transparencyreport/"]);
+  _gaq.push(['_setSiteSpeedSampleRate', 100]);
+  _gaq.push(['_trackPageview']);
+
+   
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = '//www.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+    </script>
+    <link href="/web/20150208173819cs_/http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=sv" rel=
+    "stylesheet">
+    <link href="/web/20150208173819cs_/http://www.google.com/transparencyreport/removals/europeprivacy/css/default.css" rel=
+    "stylesheet">
+    <meta content="Så påverkas sökningarna av individens integritet" property="og:title">
+    <meta content=
+    "Rätten att bli glömd eller allmänhetens rätt att få veta? Google har behandlat tusentals begäranden från personer inom EU om att ta bort sökresultat vid sökning på personens namn. Här är siffrorna."
+    name="description">
+    <meta content="https://www.google.com/transparencyreport/images/europeprivacy-social.png"
+    property="og:image">
+  </head>
+  <body>
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://www.google.com/transparencyreport/removals/europeprivacy/";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "8";
+var displayMonth = "Feb";
+var displayYear = "2015";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://www.google.com/transparencyreport/removals/europeprivacy/" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20150208173819" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    <a href="/web/20150102054143/https://www.google.com/transparencyreport/removals/europeprivacy/" title="2 Jan 2015">JAN</a>
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 17:38:19 Feb 8, 2015">FEB</td>
+		<td class="f" nowrap="nowrap">
+		
+		    <a href="/web/20150326090702/https://www.google.com/transparencyreport/removals/europeprivacy/" title="26 Mar 2015"><strong>MAR</strong></a>
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                   <a href="/web/20150204185239/https://www.google.com/transparencyreport/removals/europeprivacy/" title="18:52:39 Feb 4, 2015"><img src="/static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a>
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 17:38:19 Feb 8, 2015">8</td>
+	       <td class="f" nowrap="nowrap">
+               
+		   <a href="/web/20150326090702/https://www.google.com/transparencyreport/removals/europeprivacy/" title="9:07:02 Mar 26, 2015"><img src="/static/images/toolbar/wm_tb_nxt_on.png" alt="Next capture" width="14" height="16" border="0" /></a>
+	       
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2014
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 17:38:19 Feb 8, 2015">2015</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2016
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20150208173819*/http://www.google.com/transparencyreport/removals/europeprivacy/" title="See a list of every capture for this URL">33 captures</a>
+           <div class="r" title="Timespan for captures of this URL">11 Oct 14 - 20 Jul 15</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:-1:000000000000_2014:-1:000000000b92_2015:1:221112200000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+    <div class="maia-header" id="maia-header" role="banner">
+      <div class="maia-aux">
+        <h1>
+          <a href="/web/20150208173819/http://www.google.com/"><img alt="Google" src="/web/20150208173819im_/http://www.google.com/images/logos/google_logo_41.png"></a>
+        </h1>
+        <h2>
+          Insynsrapport
+        </h2><a class="maia-teleport" href="#content">Hoppa över</a>
+        <div class="maia-util">
+          <div class="maia-plusone">
+            <span class="plusone-button" id="plusone-httpswwwgooglecomtransparencyreport"></span>
+            <script>
+window.___gcfg = {
+      lang: 'sv',
+      parsetags: 'explicit'
+    };
+
+    var gweb = gweb || {};  // namespace
+    gweb.plusOneButton = {};
+    gweb.plusOneButton.callbacks = {};
+    gweb.plusOneButton.onPlusOneLoad = function() {
+      for (var slug in gweb.plusOneButton.callbacks) {
+        gapi.plusone.render(slug, gweb.plusOneButton.callbacks[slug]);
+      }
+      gweb.plusOneButton.callbacks = {};
+    };
+            </script><script src="/web/20150208173819js_/http://apis.google.com/js/platform.js">
+</script><script>
+(function () {
+    var href = '/web/20150208173819/https://www.google.com/transparencyreport/' ||
+        window['location']['protocol'] + '//' +
+        window['location']['host'] + window['location']['pathname'];
+    gweb.plusOneButton.callbacks['plusone-httpswwwgooglecomtransparencyreport'] = {
+        'annotation': 'none',
+        'href': href,
+        'size': 'medium',
+        'callback': '',
+        'recommendations': 'true'
+    };
+    gweb.plusOneButton.onPlusOneLoad();
+  })();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="maia-nav maia-complex" id="maia-nav-x" role="navigation">
+      <div class="maia-aux">
+        <ul>
+          <li>
+            <a href="/web/20150208173819/http://www.google.com/transparencyreport/?hl=sv">Startsida</a>
+          </li>
+          <li>
+            <a href="/web/20150208173819/http://www.google.com/transparencyreport/traffic/?hl=sv">Trafik</a>
+          </li>
+          <li class="active">
+            <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/?hl=sv">Begäranden om att ta bort innehåll</a>
+            <ul class="third-level">
+              <li>
+                <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/?hl=sv">Inledning</a>
+              </li>
+              <li>
+                <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/government/?hl=sv">Från myndigheter</a>
+              </li>
+              <li>
+                <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/copyright/?hl=sv">Av upphovsrättsliga
+                skäl</a>
+              </li>
+              <li class="active has-dropdown">
+                <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/europeprivacy/?hl=sv">Europeisk sekretess i
+                sökningar</a>
+                <ul class="dropdown">
+                  <li>
+                    <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/europeprivacy/?hl=sv">Översikt</a>
+                  </li>
+                  <li>
+                    <a href="/web/20150208173819/http://www.google.com/transparencyreport/removals/europeprivacy/faq/?hl=sv">Vanliga
+                    frågor</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/web/20150208173819/http://www.google.com/transparencyreport/userdatarequests/?hl=sv">Säkerhet och sekretess</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="main" role="main">
+      <div class="maia-aux">
+        <h1>
+          Begäranden om borttagning av sökresultat i Europa av integritetsskäl
+        </h1>
+        <p>
+          EU-domstolen beslutade i maj 2014, i målet <a href=
+          "/web/20150208173819/http://curia.europa.eu/juris/document/document.jsf?docid=152065&amp;doclang=sv" target=
+          "_blank"><em>Google Spanien mot AEPD och Mario Costeja González</em></a>, att användare
+          har rätt att begära att sökmotorer som Google tar bort resultat för sökfrågor som handlar
+          om användaren i fråga. Domstolen slog fast att sökmotorerna måste göra en bedömning av
+          varje begäran om borttagning från en person och att sökmotorn bara får fortsätta att visa
+          vissa sökresultat om detta ligger i allmänhetens intresse. Om du vill veta mer om
+          processen och vilka uppgifter vi anger här <a href=
+          "/web/20150208173819/http://www.google.com/transparencyreport/removals/europeprivacy/faq/?hl=sv">läser du våra vanliga frågor</a>.
+        </p>
+        <p class="disclaimer">
+          Uppgifterna uppdaterades senast: 8 februari 2015
+        </p>
+      </div>
+      <div class="europe-privacy">
+        <section id="requests">
+          <div class="maia-aux card-hed">
+            <h2 class="section-header">
+              Totalt antal begäranden om borttagning av webbadresser
+            </h2>
+            <p class="details">
+              I diagrammet nedan visas antalet procent av webbadresserna som vi har granskat och
+              behandlat. Siffrorna till höger baseras på det totala antalet mottagna begäranden.
+              Dessa data inhämtades den 29 maj 2014, då vår officiella process för den här typen av
+              begäranden startades.
+            </p>
+          </div>
+          <div class="card">
+            <div class="maia-aux">
+              <div class="maia-cols">
+                <div class="maia-col-5 graph">
+                  <div id="graph-total-requests"></div>
+                </div>
+                <div class="maia-col-7 annotations">
+                  <div class="card-content">
+                    <div class="requests-content-all">
+                      <p>
+                        Totalt antal webbadresser som Google har utvärderat för borttagning:
+                        <em><span class="url-requests">772,107</span> webbadresser</em>
+                      </p>
+                      <p>
+                        Total antal begäranden som Google har tagit emot: <em><span class=
+                        "total-requests">213,760</span> begäranden</em>
+                      </p>
+                    </div>
+                    <div class="requests-content-country">
+                      <p>
+                        <strong><span class="country-name">Country</span>:</strong>
+                      </p>
+                      <p>
+                        Totalt antal webbadresser som personer med anknytning till det här landet
+                        har begärt att Google ska ta bort: <em><span class="url-requests">0</span>
+                        webbadresser</em>
+                      </p>
+                      <p>
+                        Totalt antal begäranden som Google har tagit emot från det här landet:
+                        <em><span class="total-requests">0</span> begäranden</em>
+                      </p>
+                    </div>
+                    <p class="disclaimer">
+                      I diagrammet visas webbadresser som har behandlats färdigt, medan siffrorna
+                      ovan anger det totala antalet&nbsp;utvärderade webbadresser. Webbadresser där
+                      vi behöver mer information eller som inväntar granskning är inte medräknade i
+                      diagrammet.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="maia-cols graph-total-requests-controls-wrapper">
+                <div class="maia-col-12 graph-total-requests-controls">
+                  <div id="graph-total-requests-dropdown"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="card-wrapper" id="examples">
+          <div class="maia-aux card-hed">
+            <h2 class="section-header">
+              Exempel på inkomna ärenden
+            </h2>
+            <p class="details">
+              Det här är exempel på begäranden som vi har tagit emot från personer. Vid bedömningen
+              av varje begäran måste Google ta hänsyn till såväl individens rättigheter som
+              allmänhetens intresse av innehållet.
+            </p>
+          </div>
+          <div class="cards">
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En kvinna begärde att vi skulle ta bort en flera årtionden gammal artikel om
+                      mordet på hennes man som innehöll hennes namn. Vi har tagit bort sidan från
+                      sökresultaten för hennes namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/de.png">
+                    <p>
+                      Tyskland
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Ett våldtäktsoffer begärde att vi skulle ta bort en länk till en
+                      tidningsartikel om brottet. Vi har tagit bort sidan från sökresultaten för
+                      personens namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/de.png">
+                    <p>
+                      Tyskland
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Vi fick flera begäranden från en enskild individ om ​​att ta bort 20 länkar
+                      till nyligen publicerade artiklar om individens gripande för ekonomiska brott
+                      som han begått i sin yrkesroll. Vi tog inte bort sidorna från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En yrkesman inom media begärde att vi skulle ta bort fyra länkar till
+                      artiklar med rapportering om pinsamt innehåll han lagt upp på nätet. Vi tog
+                      inte bort sidorna från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Vi fick en begäran från ett brottsoffer om att ta bort tre länkar med
+                      diskussioner om brottet, som inträffade för flera decennier sedan. Vi har
+                      tagit bort sidorna från sökresultaten för hennes namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En enskild individ begärde att vi skulle ta bort länkar till internetartiklar
+                      som hänvisar till hans uppsägning på grund av sexuella brott som han begick
+                      på arbetet. Vi tog inte bort sidorna från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En läkare begärde att vi skulle ta bort över 50 länkar till tidningsartiklar
+                      om ett osakkunnigt utfört ingrepp. Tre sidor som innehöll personlig
+                      information om läkaren men som inte nämnde ingreppet har tagits bort från
+                      sökresultaten för hans namn. Resten av länkarna till rapportering om
+                      händelsen finns kvar i sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/nl.png">
+                    <p>
+                      Nederländerna
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Vi fick en begäran från en enskild individ om att ta bort mer än 50 länkar
+                      till artiklar och blogginlägg med rapportering om en folkstorm som uppstått
+                      med anledning av anklagelser om att han missbrukat vårdtjänster. Vi tog inte
+                      bort sidorna från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/nl.png">
+                    <p>
+                      Nederländerna
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En enskild individ begärde att vi skulle ta bort en länk till en sida som
+                      hade tagit en bild hon publicerat själv och lagt upp den på nytt. Sidan har
+                      tagits bort från sökresultaten för hennes namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En enskild individ begärde att vi skulle ta bort en länk till en kopia av ett
+                      officiellt statligt dokument, publicerat av en statlig myndighet, som
+                      rapporterar om de bedrägerier individen har begått. Vi tog inte bort sidan
+                      från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/it.png">
+                    <p>
+                      Italien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Vi fick en begäran från en man om att ta bort en länk till en
+                      nyhetssammanfattning om ett lokalt domstolsbeslut som innehöll mannens
+                      fällande dom. I enlighet med UK Rehabilitation of Offenders Act har han
+                      tagits bort från belastningsregistret. Vi har tagit bort sidan från
+                      sökresultaten för hans namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En offentlig tjänsteman begärde att vi skulle ta bort en länk till en
+                      petition från en elevorganisation som krävde hans avgång. Vi tog inte bort
+                      sidan från sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      Vi fick en begäran från en tidigare präst om att ta bort två länkar till
+                      artiklar med rapportering om en utredning gällande anklagelser mot honom för
+                      sexuella övergrepp under hans yrkesutövning. Vi tog inte bort sidorna från
+                      sökresultaten.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/gb.png">
+                    <p>
+                      Storbritannien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="maia-aux">
+                <div class="maia-cols">
+                  <div class="maia-col-4 country-info show-mobile clearfix">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/be.png">
+                    <p>
+                      Belgien
+                    </p>
+                  </div>
+                  <div class="maia-col-8">
+                    <p>
+                      En enskild individ begärde att vi skulle ta bort en länk till en artikel om
+                      en tävling som han deltog i som minderårig. Vi har tagit bort sidan från
+                      sökresultaten för hans namn.
+                    </p>
+                  </div>
+                  <div class="maia-col-4 country-info show-desktop">
+                    <img alt="" src="/web/20150208173819im_/http://www.google.com/transparencyreport/images/flags/be.png">
+                    <p>
+                      Belgien
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="sites">
+          <div class="maia-aux card-hed">
+            <h2 class="section-header">
+              Webbplatser som påverkas mest
+            </h2>
+            <p class="details">
+              I listan nedan visas de domäner där vi har tagit bort flest webbadresser från
+              sökresultaten.
+            </p>
+            <p class="featured">
+              Av det totala antalet webbadresser som användare har begärt ska tas bort från
+              sökresultat utgör följande tio webbplatser <em><span class="top-ten-percent">8</span>
+              %</em>
+            </p>
+          </div>
+          <div class="card">
+            <div class="maia-aux">
+              <div class="maia-cols">
+                <div class="maia-col-12">
+                  <ul>
+                    <li>
+                      <span class="site-hostname">www.facebook.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 5429</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">profileengine.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 5160</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">groups.google.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 3601</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">badoo.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 3280</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">www.youtube.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 3216</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">www.yasni.de</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 2258</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">www.wherevent.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 2232</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">www.192.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 2129</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">plus.google.com</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 2087</span>
+                    </li>
+                    <li>
+                      <span class="site-hostname">www.yasni.fr</span> <span class=
+                      "site-number">Webbadresser som har tagits bort: 1864</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section><script>
+function shareIt(url) {
+    window.open(url,
+        '',
+        'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');
+    return false;
+  }
+        </script>
+        <section id="share">
+          <div class="maia-aux">
+            <a class="share share-gp" href=
+            "/web/20150208173819/https://plus.google.com/share?url=http%3A//g.co/europeprivacy" onclick=
+            "return shareIt(this.href);">Google+</a> <a class="share share-tw" href=
+            "/web/20150208173819/https://twitter.com/intent/tweet?text=Statistik%20fr%C3%A5n%20Google%20om%20beg%C3%A4randen%20fr%C3%A5n%20personer%20i%20EU%20om%20att%20ta%20bort%20s%C3%B6kresultat%3A&amp;url=http%3A//g.co/europeprivacy"
+            onclick="return shareIt(this.href);">Twitter</a> <a class="share share-fb" href=
+            "/web/20150208173819/https://www.facebook.com/sharer.php?u=http%3A//g.co/europeprivacy" onclick=
+            "return shareIt(this.href);">Facebook</a>
+          </div>
+        </section>
+      </div><script>
+var AGGREGATE_DATA = {
+  "ALL": { "name": "Alla", "requests": {"all": {"total": 213760, "rejected": 76096, "need_more_info": 27800, "complied": 90866, "pending": 5475}, "issues": {"serious_crime": {"total": 4015, "rejected": 2565, "need_more_info": 669, "complied": 662, "pending": 114}, "public_figure": {"total": 2033, "rejected": 1443, "need_more_info": 126, "complied": 426, "pending": 36}, "private_personal_info": {"total": 190468, "rejected": 69595, "need_more_info": 26565, "complied": 88566, "pending": 5261}, "cp": {"total": 983, "rejected": 665, "need_more_info": 130, "complied": 161, "pending": 26}, "political": {"total": 2218, "rejected": 1503, "need_more_info": 175, "complied": 496, "pending": 40}}}, "urls": {"all": {"total": 772107, "rejected": 382672, "need_more_info": 100451, "complied": 258749, "pending": 20935}, "issues": {"serious_crime": {"total": 19233, "rejected": 14641, "need_more_info": 2419, "complied": 1678, "pending": 431}, "public_figure": {"total": 14479, "rejected": 11977, "need_more_info": 675, "complied": 1548, "pending": 190}, "private_personal_info": {"total": 721705, "rejected": 344703, "need_more_info": 96004, "complied": 252053, "pending": 20031}, "cp": {"total": 4300, "rejected": 3240, "need_more_info": 405, "complied": 543, "pending": 84}, "political": {"total": 10357, "rejected": 7904, "need_more_info": 626, "complied": 1498, "pending": 194}}} },
+  
+
+  
+  
+  "CH": { "name": "Schweiz", "requests": {"all": {"total": 5620, "rejected": 1814, "need_more_info": 710, "complied": 2579, "pending": 136}, "issues": {"serious_crime": {"total": 46, "rejected": 33, "need_more_info": 5, "complied": 8, "pending": 0}, "public_figure": {"total": 143, "rejected": 113, "need_more_info": 8, "complied": 21, "pending": 1}, "private_personal_info": {"total": 4976, "rejected": 1637, "need_more_info": 685, "complied": 2509, "pending": 134}, "cp": {"total": 36, "rejected": 9, "need_more_info": 4, "complied": 22, "pending": 1}, "political": {"total": 35, "rejected": 25, "need_more_info": 3, "complied": 7, "pending": 0}}}, "urls": {"all": {"total": 18332, "rejected": 8415, "need_more_info": 2350, "complied": 6898, "pending": 396}, "issues": {"serious_crime": {"total": 168, "rejected": 147, "need_more_info": 10, "complied": 11, "pending": 0}, "public_figure": {"total": 1016, "rejected": 924, "need_more_info": 31, "complied": 56, "pending": 1}, "private_personal_info": {"total": 16946, "rejected": 7271, "need_more_info": 2270, "complied": 6745, "pending": 391}, "cp": {"total": 54, "rejected": 24, "need_more_info": 4, "complied": 22, "pending": 4}, "political": {"total": 403, "rejected": 287, "need_more_info": 3, "complied": 113, "pending": 0}}} },
+  
+  "NL": { "name": "Nederländerna", "requests": {"all": {"total": 13078, "rejected": 4783, "need_more_info": 1510, "complied": 6005, "pending": 220}, "issues": {"serious_crime": {"total": 60, "rejected": 40, "need_more_info": 10, "complied": 10, "pending": 0}, "public_figure": {"total": 96, "rejected": 73, "need_more_info": 7, "complied": 16, "pending": 0}, "private_personal_info": {"total": 12211, "rejected": 4596, "need_more_info": 1468, "complied": 5916, "pending": 217}, "cp": {"total": 30, "rejected": 15, "need_more_info": 4, "complied": 11, "pending": 0}, "political": {"total": 78, "rejected": 50, "need_more_info": 6, "complied": 19, "pending": 3}}}, "urls": {"all": {"total": 47625, "rejected": 23889, "need_more_info": 5709, "complied": 17011, "pending": 708}, "issues": {"serious_crime": {"total": 305, "rejected": 214, "need_more_info": 56, "complied": 26, "pending": 0}, "public_figure": {"total": 711, "rejected": 639, "need_more_info": 25, "complied": 46, "pending": 0}, "private_personal_info": {"total": 45761, "rejected": 22594, "need_more_info": 5436, "complied": 16732, "pending": 703}, "cp": {"total": 128, "rejected": 59, "need_more_info": 5, "complied": 64, "pending": 0}, "political": {"total": 476, "rejected": 333, "need_more_info": 102, "complied": 35, "pending": 5}}} },
+  
+  "IT": { "name": "Italien", "requests": {"all": {"total": 16260, "rejected": 7395, "need_more_info": 2526, "complied": 4936, "pending": 481}, "issues": {"serious_crime": {"total": 1951, "rejected": 1203, "need_more_info": 360, "complied": 331, "pending": 55}, "public_figure": {"total": 170, "rejected": 113, "need_more_info": 10, "complied": 45, "pending": 1}, "private_personal_info": {"total": 12854, "rejected": 5780, "need_more_info": 2117, "complied": 4492, "pending": 411}, "cp": {"total": 84, "rejected": 64, "need_more_info": 12, "complied": 5, "pending": 3}, "political": {"total": 263, "rejected": 212, "need_more_info": 17, "complied": 27, "pending": 7}}}, "urls": {"all": {"total": 55755, "rejected": 34174, "need_more_info": 7728, "complied": 11590, "pending": 1675}, "issues": {"serious_crime": {"total": 10137, "rejected": 7912, "need_more_info": 1201, "complied": 763, "pending": 230}, "public_figure": {"total": 878, "rejected": 734, "need_more_info": 31, "complied": 108, "pending": 3}, "private_personal_info": {"total": 43131, "rejected": 24334, "need_more_info": 6377, "complied": 10534, "pending": 1338}, "cp": {"total": 547, "rejected": 447, "need_more_info": 64, "complied": 24, "pending": 12}, "political": {"total": 987, "rejected": 765, "need_more_info": 37, "complied": 100, "pending": 81}}} },
+  
+  "RO": { "name": "Rumänien", "requests": {"all": {"total": 3783, "rejected": 1867, "need_more_info": 515, "complied": 1027, "pending": 79}, "issues": {"serious_crime": {"total": 101, "rejected": 55, "need_more_info": 31, "complied": 12, "pending": 3}, "public_figure": {"total": 82, "rejected": 65, "need_more_info": 5, "complied": 12, "pending": 0}, "private_personal_info": {"total": 3140, "rejected": 1629, "need_more_info": 466, "complied": 934, "pending": 76}, "cp": {"total": 17, "rejected": 14, "need_more_info": 2, "complied": 1, "pending": 0}, "political": {"total": 244, "rejected": 131, "need_more_info": 30, "complied": 74, "pending": 8}}}, "urls": {"all": {"total": 15529, "rejected": 9473, "need_more_info": 1918, "complied": 3488, "pending": 456}, "issues": {"serious_crime": {"total": 486, "rejected": 301, "need_more_info": 160, "complied": 16, "pending": 9}, "public_figure": {"total": 691, "rejected": 631, "need_more_info": 6, "complied": 43, "pending": 0}, "private_personal_info": {"total": 13415, "rejected": 7867, "need_more_info": 1698, "complied": 3225, "pending": 448}, "cp": {"total": 83, "rejected": 76, "need_more_info": 6, "complied": 1, "pending": 0}, "political": {"total": 1130, "rejected": 778, "need_more_info": 129, "complied": 204, "pending": 16}}} },
+  
+  "MT": { "name": "Malta", "requests": {"all": {"total": 175, "rejected": 68, "need_more_info": 26, "complied": 44, "pending": 6}, "issues": {"serious_crime": {"total": 2, "rejected": 1, "need_more_info": 1, "complied": 0, "pending": 0}, "public_figure": {"total": 3, "rejected": 2, "need_more_info": 1, "complied": 0, "pending": 0}, "private_personal_info": {"total": 136, "rejected": 64, "need_more_info": 24, "complied": 42, "pending": 6}, "cp": {"total": 1, "rejected": 1, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 1, "rejected": 0, "need_more_info": 0, "complied": 1, "pending": 0}}}, "urls": {"all": {"total": 524, "rejected": 291, "need_more_info": 105, "complied": 119, "pending": 8}, "issues": {"serious_crime": {"total": 3, "rejected": 2, "need_more_info": 1, "complied": 0, "pending": 0}, "public_figure": {"total": 28, "rejected": 21, "need_more_info": 7, "complied": 0, "pending": 0}, "private_personal_info": {"total": 485, "rejected": 262, "need_more_info": 97, "complied": 117, "pending": 8}, "cp": {"total": 5, "rejected": 5, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 2, "rejected": 1, "need_more_info": 0, "complied": 1, "pending": 0}}} },
+  
+  "PT": { "name": "Portugal", "requests": {"all": {"total": 2004, "rejected": 822, "need_more_info": 331, "complied": 592, "pending": 41}, "issues": {"serious_crime": {"total": 18, "rejected": 14, "need_more_info": 4, "complied": 0, "pending": 0}, "public_figure": {"total": 8, "rejected": 4, "need_more_info": 1, "complied": 3, "pending": 0}, "private_personal_info": {"total": 1736, "rejected": 794, "need_more_info": 316, "complied": 584, "pending": 39}, "cp": {"total": 11, "rejected": 3, "need_more_info": 6, "complied": 1, "pending": 1}, "political": {"total": 6, "rejected": 5, "need_more_info": 1, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 8275, "rejected": 5245, "need_more_info": 1165, "complied": 1673, "pending": 155}, "issues": {"serious_crime": {"total": 58, "rejected": 49, "need_more_info": 9, "complied": 0, "pending": 0}, "public_figure": {"total": 81, "rejected": 47, "need_more_info": 3, "complied": 31, "pending": 0}, "private_personal_info": {"total": 8062, "rejected": 5114, "need_more_info": 1135, "complied": 1623, "pending": 153}, "cp": {"total": 19, "rejected": 6, "need_more_info": 7, "complied": 5, "pending": 1}, "political": {"total": 26, "rejected": 23, "need_more_info": 3, "complied": 0, "pending": 0}}} },
+  
+  "PL": { "name": "Polen", "requests": {"all": {"total": 5579, "rejected": 1965, "need_more_info": 834, "complied": 2419, "pending": 92}, "issues": {"serious_crime": {"total": 36, "rejected": 25, "need_more_info": 3, "complied": 7, "pending": 1}, "public_figure": {"total": 78, "rejected": 64, "need_more_info": 4, "complied": 10, "pending": 0}, "private_personal_info": {"total": 5162, "rejected": 1850, "need_more_info": 823, "complied": 2391, "pending": 91}, "cp": {"total": 19, "rejected": 16, "need_more_info": 2, "complied": 1, "pending": 0}, "political": {"total": 15, "rejected": 10, "need_more_info": 1, "complied": 4, "pending": 0}}}, "urls": {"all": {"total": 22456, "rejected": 11796, "need_more_info": 3276, "complied": 6891, "pending": 350}, "issues": {"serious_crime": {"total": 130, "rejected": 80, "need_more_info": 21, "complied": 28, "pending": 1}, "public_figure": {"total": 605, "rejected": 582, "need_more_info": 6, "complied": 16, "pending": 1}, "private_personal_info": {"total": 21525, "rejected": 10997, "need_more_info": 3240, "complied": 6803, "pending": 348}, "cp": {"total": 81, "rejected": 68, "need_more_info": 3, "complied": 4, "pending": 0}, "political": {"total": 41, "rejected": 33, "need_more_info": 3, "complied": 5, "pending": 0}}} },
+  
+  "CZ": { "name": "Tjeckien", "requests": {"all": {"total": 2182, "rejected": 875, "need_more_info": 294, "complied": 901, "pending": 18}, "issues": {"serious_crime": {"total": 8, "rejected": 3, "need_more_info": 2, "complied": 2, "pending": 0}, "public_figure": {"total": 28, "rejected": 20, "need_more_info": 3, "complied": 5, "pending": 0}, "private_personal_info": {"total": 2039, "rejected": 843, "need_more_info": 288, "complied": 888, "pending": 17}, "cp": {"total": 4, "rejected": 2, "need_more_info": 1, "complied": 0, "pending": 1}, "political": {"total": 11, "rejected": 6, "need_more_info": 0, "complied": 5, "pending": 0}}}, "urls": {"all": {"total": 9070, "rejected": 5386, "need_more_info": 997, "complied": 2548, "pending": 100}, "issues": {"serious_crime": {"total": 22, "rejected": 6, "need_more_info": 2, "complied": 13, "pending": 0}, "public_figure": {"total": 299, "rejected": 274, "need_more_info": 9, "complied": 10, "pending": 0}, "private_personal_info": {"total": 8665, "rejected": 5048, "need_more_info": 977, "complied": 2512, "pending": 99}, "cp": {"total": 21, "rejected": 12, "need_more_info": 8, "complied": 0, "pending": 1}, "political": {"total": 58, "rejected": 43, "need_more_info": 1, "complied": 12, "pending": 0}}} },
+  
+  "IE": { "name": "Irland", "requests": {"all": {"total": 2049, "rejected": 937, "need_more_info": 293, "complied": 558, "pending": 96}, "issues": {"serious_crime": {"total": 64, "rejected": 38, "need_more_info": 12, "complied": 11, "pending": 2}, "public_figure": {"total": 14, "rejected": 13, "need_more_info": 0, "complied": 1, "pending": 0}, "private_personal_info": {"total": 1757, "rejected": 852, "need_more_info": 275, "complied": 529, "pending": 95}, "cp": {"total": 22, "rejected": 16, "need_more_info": 2, "complied": 4, "pending": 0}, "political": {"total": 10, "rejected": 9, "need_more_info": 0, "complied": 1, "pending": 0}}}, "urls": {"all": {"total": 6246, "rejected": 3725, "need_more_info": 846, "complied": 1391, "pending": 215}, "issues": {"serious_crime": {"total": 254, "rejected": 160, "need_more_info": 24, "complied": 49, "pending": 5}, "public_figure": {"total": 54, "rejected": 53, "need_more_info": 0, "complied": 1, "pending": 0}, "private_personal_info": {"total": 5835, "rejected": 3448, "need_more_info": 806, "complied": 1305, "pending": 214}, "cp": {"total": 69, "rejected": 52, "need_more_info": 4, "complied": 8, "pending": 0}, "political": {"total": 21, "rejected": 17, "need_more_info": 0, "complied": 2, "pending": 0}}} },
+  
+  "AT": { "name": "Österrike", "requests": {"all": {"total": 4028, "rejected": 1200, "need_more_info": 509, "complied": 1895, "pending": 104}, "issues": {"serious_crime": {"total": 10, "rejected": 3, "need_more_info": 6, "complied": 0, "pending": 1}, "public_figure": {"total": 38, "rejected": 23, "need_more_info": 2, "complied": 11, "pending": 2}, "private_personal_info": {"total": 3640, "rejected": 1154, "need_more_info": 495, "complied": 1877, "pending": 101}, "cp": {"total": 4, "rejected": 2, "need_more_info": 1, "complied": 1, "pending": 0}, "political": {"total": 34, "rejected": 20, "need_more_info": 7, "complied": 6, "pending": 1}}}, "urls": {"all": {"total": 15408, "rejected": 6334, "need_more_info": 1932, "complied": 6681, "pending": 325}, "issues": {"serious_crime": {"total": 88, "rejected": 47, "need_more_info": 39, "complied": 0, "pending": 2}, "public_figure": {"total": 205, "rejected": 156, "need_more_info": 13, "complied": 34, "pending": 2}, "private_personal_info": {"total": 15040, "rejected": 6064, "need_more_info": 1885, "complied": 6635, "pending": 321}, "cp": {"total": 21, "rejected": 18, "need_more_info": 2, "complied": 1, "pending": 0}, "political": {"total": 146, "rejected": 103, "need_more_info": 23, "complied": 18, "pending": 1}}} },
+  
+  "ES": { "name": "Spanien", "requests": {"all": {"total": 19663, "rejected": 7600, "need_more_info": 2391, "complied": 7879, "pending": 442}, "issues": {"serious_crime": {"total": 176, "rejected": 104, "need_more_info": 32, "complied": 35, "pending": 5}, "public_figure": {"total": 97, "rejected": 64, "need_more_info": 8, "complied": 24, "pending": 1}, "private_personal_info": {"total": 17278, "rejected": 6914, "need_more_info": 2281, "complied": 7625, "pending": 427}, "cp": {"total": 31, "rejected": 22, "need_more_info": 3, "complied": 6, "pending": 0}, "political": {"total": 555, "rejected": 411, "need_more_info": 26, "complied": 107, "pending": 9}}}, "urls": {"all": {"total": 64247, "rejected": 35337, "need_more_info": 7510, "complied": 19077, "pending": 1416}, "issues": {"serious_crime": {"total": 635, "rejected": 444, "need_more_info": 102, "complied": 70, "pending": 19}, "public_figure": {"total": 623, "rejected": 507, "need_more_info": 28, "complied": 86, "pending": 1}, "private_personal_info": {"total": 60307, "rejected": 32390, "need_more_info": 7225, "complied": 18501, "pending": 1350}, "cp": {"total": 96, "rejected": 82, "need_more_info": 5, "complied": 7, "pending": 0}, "political": {"total": 2089, "rejected": 1723, "need_more_info": 63, "complied": 232, "pending": 46}}} },
+  
+  "GB": { "name": "Storbritannien", "requests": {"all": {"total": 27227, "rejected": 11388, "need_more_info": 4079, "complied": 8629, "pending": 955}, "issues": {"serious_crime": {"total": 695, "rejected": 484, "need_more_info": 89, "complied": 95, "pending": 27}, "public_figure": {"total": 220, "rejected": 156, "need_more_info": 13, "complied": 38, "pending": 12}, "private_personal_info": {"total": 23391, "rejected": 10262, "need_more_info": 3887, "complied": 8300, "pending": 902}, "cp": {"total": 341, "rejected": 262, "need_more_info": 39, "complied": 30, "pending": 10}, "political": {"total": 117, "rejected": 83, "need_more_info": 11, "complied": 20, "pending": 3}}}, "urls": {"all": {"total": 106053, "rejected": 56197, "need_more_info": 15522, "complied": 29413, "pending": 3569}, "issues": {"serious_crime": {"total": 3266, "rejected": 2414, "need_more_info": 455, "complied": 314, "pending": 81}, "public_figure": {"total": 1834, "rejected": 1430, "need_more_info": 95, "complied": 190, "pending": 115}, "private_personal_info": {"total": 98109, "rejected": 50388, "need_more_info": 14696, "complied": 28366, "pending": 3335}, "cp": {"total": 1420, "rejected": 1163, "need_more_info": 144, "complied": 91, "pending": 21}, "political": {"total": 482, "rejected": 345, "need_more_info": 59, "complied": 59, "pending": 16}}} },
+  
+  "EE": { "name": "Estland", "requests": {"all": {"total": 1479, "rejected": 556, "need_more_info": 196, "complied": 609, "pending": 52}, "issues": {"serious_crime": {"total": 33, "rejected": 25, "need_more_info": 5, "complied": 2, "pending": 1}, "public_figure": {"total": 5, "rejected": 4, "need_more_info": 0, "complied": 1, "pending": 0}, "private_personal_info": {"total": 1362, "rejected": 512, "need_more_info": 191, "complied": 606, "pending": 51}, "cp": {"total": 1, "rejected": 1, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 30, "rejected": 23, "need_more_info": 2, "complied": 5, "pending": 0}}}, "urls": {"all": {"total": 5225, "rejected": 2586, "need_more_info": 694, "complied": 1756, "pending": 120}, "issues": {"serious_crime": {"total": 125, "rejected": 114, "need_more_info": 6, "complied": 4, "pending": 1}, "public_figure": {"total": 88, "rejected": 82, "need_more_info": 0, "complied": 1, "pending": 0}, "private_personal_info": {"total": 5005, "rejected": 2388, "need_more_info": 688, "complied": 1746, "pending": 119}, "cp": {"total": 1, "rejected": 1, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 97, "rejected": 77, "need_more_info": 5, "complied": 15, "pending": 0}}} },
+  
+  "HR": { "name": "Kroatien", "requests": {"all": {"total": 2327, "rejected": 1017, "need_more_info": 324, "complied": 780, "pending": 59}, "issues": {"serious_crime": {"total": 36, "rejected": 15, "need_more_info": 10, "complied": 3, "pending": 8}, "public_figure": {"total": 37, "rejected": 30, "need_more_info": 4, "complied": 2, "pending": 1}, "private_personal_info": {"total": 2072, "rejected": 945, "need_more_info": 306, "complied": 771, "pending": 50}, "cp": {"total": 4, "rejected": 2, "need_more_info": 2, "complied": 0, "pending": 0}, "political": {"total": 31, "rejected": 24, "need_more_info": 1, "complied": 6, "pending": 0}}}, "urls": {"all": {"total": 7437, "rejected": 4390, "need_more_info": 1127, "complied": 1667, "pending": 219}, "issues": {"serious_crime": {"total": 177, "rejected": 83, "need_more_info": 36, "complied": 3, "pending": 55}, "public_figure": {"total": 201, "rejected": 180, "need_more_info": 5, "complied": 2, "pending": 14}, "private_personal_info": {"total": 6911, "rejected": 4000, "need_more_info": 1073, "complied": 1654, "pending": 150}, "cp": {"total": 12, "rejected": 3, "need_more_info": 9, "complied": 0, "pending": 0}, "political": {"total": 139, "rejected": 125, "need_more_info": 3, "complied": 11, "pending": 0}}} },
+  
+  "HU": { "name": "Ungern", "requests": {"all": {"total": 2138, "rejected": 930, "need_more_info": 228, "complied": 719, "pending": 57}, "issues": {"serious_crime": {"total": 13, "rejected": 12, "need_more_info": 0, "complied": 1, "pending": 0}, "public_figure": {"total": 179, "rejected": 146, "need_more_info": 7, "complied": 26, "pending": 0}, "private_personal_info": {"total": 1666, "rejected": 704, "need_more_info": 214, "complied": 685, "pending": 56}, "cp": {"total": 30, "rejected": 25, "need_more_info": 2, "complied": 3, "pending": 0}, "political": {"total": 52, "rejected": 43, "need_more_info": 5, "complied": 3, "pending": 1}}}, "urls": {"all": {"total": 8247, "rejected": 5259, "need_more_info": 835, "complied": 1913, "pending": 132}, "issues": {"serious_crime": {"total": 37, "rejected": 36, "need_more_info": 0, "complied": 1, "pending": 0}, "public_figure": {"total": 1566, "rejected": 1449, "need_more_info": 32, "complied": 77, "pending": 0}, "private_personal_info": {"total": 6251, "rejected": 3413, "need_more_info": 786, "complied": 1824, "pending": 130}, "cp": {"total": 103, "rejected": 88, "need_more_info": 10, "complied": 5, "pending": 0}, "political": {"total": 287, "rejected": 271, "need_more_info": 7, "complied": 5, "pending": 2}}} },
+  
+  "BG": { "name": "Bulgarien", "requests": {"all": {"total": 847, "rejected": 426, "need_more_info": 129, "complied": 181, "pending": 41}, "issues": {"serious_crime": {"total": 15, "rejected": 12, "need_more_info": 2, "complied": 1, "pending": 0}, "public_figure": {"total": 16, "rejected": 11, "need_more_info": 1, "complied": 3, "pending": 1}, "private_personal_info": {"total": 729, "rejected": 392, "need_more_info": 120, "complied": 177, "pending": 40}, "cp": {"total": 4, "rejected": 3, "need_more_info": 1, "complied": 0, "pending": 0}, "political": {"total": 19, "rejected": 9, "need_more_info": 6, "complied": 4, "pending": 0}}}, "urls": {"all": {"total": 3114, "rejected": 1949, "need_more_info": 504, "complied": 515, "pending": 138}, "issues": {"serious_crime": {"total": 40, "rejected": 37, "need_more_info": 2, "complied": 1, "pending": 0}, "public_figure": {"total": 133, "rejected": 101, "need_more_info": 4, "complied": 23, "pending": 5}, "private_personal_info": {"total": 2807, "rejected": 1690, "need_more_info": 481, "complied": 495, "pending": 133}, "cp": {"total": 48, "rejected": 39, "need_more_info": 9, "complied": 0, "pending": 0}, "political": {"total": 220, "rejected": 189, "need_more_info": 11, "complied": 20, "pending": 0}}} },
+  
+  "BE": { "name": "Belgien", "requests": {"all": {"total": 6594, "rejected": 2133, "need_more_info": 866, "complied": 3194, "pending": 127}, "issues": {"serious_crime": {"total": 91, "rejected": 65, "need_more_info": 12, "complied": 14, "pending": 0}, "public_figure": {"total": 49, "rejected": 30, "need_more_info": 5, "complied": 12, "pending": 2}, "private_personal_info": {"total": 6081, "rejected": 1982, "need_more_info": 838, "complied": 3132, "pending": 123}, "cp": {"total": 32, "rejected": 18, "need_more_info": 4, "complied": 9, "pending": 1}, "political": {"total": 49, "rejected": 29, "need_more_info": 5, "complied": 15, "pending": 0}}}, "urls": {"all": {"total": 23902, "rejected": 11243, "need_more_info": 3050, "complied": 8926, "pending": 429}, "issues": {"serious_crime": {"total": 299, "rejected": 244, "need_more_info": 31, "complied": 23, "pending": 0}, "public_figure": {"total": 269, "rejected": 223, "need_more_info": 9, "complied": 34, "pending": 3}, "private_personal_info": {"total": 22905, "rejected": 10492, "need_more_info": 2986, "complied": 8750, "pending": 424}, "cp": {"total": 114, "rejected": 72, "need_more_info": 4, "complied": 37, "pending": 1}, "political": {"total": 249, "rejected": 191, "need_more_info": 12, "complied": 46, "pending": 0}}} },
+  
+  "LT": { "name": "Litauen", "requests": {"all": {"total": 1047, "rejected": 355, "need_more_info": 161, "complied": 426, "pending": 31}, "issues": {"serious_crime": {"total": 9, "rejected": 6, "need_more_info": 3, "complied": 0, "pending": 0}, "public_figure": {"total": 7, "rejected": 6, "need_more_info": 1, "complied": 0, "pending": 0}, "private_personal_info": {"total": 950, "rejected": 336, "need_more_info": 158, "complied": 425, "pending": 31}, "cp": {"total": 2, "rejected": 2, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 7, "rejected": 5, "need_more_info": 0, "complied": 1, "pending": 1}}}, "urls": {"all": {"total": 4110, "rejected": 1918, "need_more_info": 637, "complied": 1387, "pending": 147}, "issues": {"serious_crime": {"total": 54, "rejected": 43, "need_more_info": 11, "complied": 0, "pending": 0}, "public_figure": {"total": 20, "rejected": 13, "need_more_info": 7, "complied": 0, "pending": 0}, "private_personal_info": {"total": 4002, "rejected": 1828, "need_more_info": 622, "complied": 1384, "pending": 147}, "cp": {"total": 6, "rejected": 6, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 44, "rejected": 33, "need_more_info": 0, "complied": 7, "pending": 4}}} },
+  
+  "LI": { "name": "Liechtenstein", "requests": {"all": {"total": 63, "rejected": 18, "need_more_info": 5, "complied": 11, "pending": 1}, "issues": {"serious_crime": {"total": 1, "rejected": 0, "need_more_info": 1, "complied": 0, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 33, "rejected": 18, "need_more_info": 4, "complied": 10, "pending": 1}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 131, "rejected": 77, "need_more_info": 16, "complied": 37, "pending": 1}, "issues": {"serious_crime": {"total": 5, "rejected": 0, "need_more_info": 5, "complied": 0, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 125, "rejected": 77, "need_more_info": 11, "complied": 36, "pending": 1}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}}} },
+  
+  "IS": { "name": "Island", "requests": {"all": {"total": 158, "rejected": 69, "need_more_info": 18, "complied": 34, "pending": 5}, "issues": {"serious_crime": {"total": 4, "rejected": 3, "need_more_info": 0, "complied": 1, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 120, "rejected": 64, "need_more_info": 18, "complied": 33, "pending": 5}, "cp": {"total": 1, "rejected": 1, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 1, "rejected": 1, "need_more_info": 0, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 465, "rejected": 291, "need_more_info": 56, "complied": 108, "pending": 10}, "issues": {"serious_crime": {"total": 22, "rejected": 16, "need_more_info": 0, "complied": 6, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 437, "rejected": 269, "need_more_info": 56, "complied": 102, "pending": 10}, "cp": {"total": 3, "rejected": 3, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 3, "rejected": 3, "need_more_info": 0, "complied": 0, "pending": 0}}} },
+  
+  "SI": { "name": "Slovenien", "requests": {"all": {"total": 813, "rejected": 362, "need_more_info": 107, "complied": 266, "pending": 22}, "issues": {"serious_crime": {"total": 6, "rejected": 2, "need_more_info": 1, "complied": 2, "pending": 1}, "public_figure": {"total": 12, "rejected": 10, "need_more_info": 1, "complied": 1, "pending": 0}, "private_personal_info": {"total": 714, "rejected": 329, "need_more_info": 103, "complied": 260, "pending": 21}, "cp": {"total": 14, "rejected": 11, "need_more_info": 1, "complied": 2, "pending": 0}, "political": {"total": 12, "rejected": 11, "need_more_info": 1, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 2764, "rejected": 1712, "need_more_info": 339, "complied": 604, "pending": 88}, "issues": {"serious_crime": {"total": 9, "rejected": 5, "need_more_info": 1, "complied": 2, "pending": 1}, "public_figure": {"total": 70, "rejected": 66, "need_more_info": 2, "complied": 2, "pending": 0}, "private_personal_info": {"total": 2624, "rejected": 1592, "need_more_info": 327, "complied": 597, "pending": 87}, "cp": {"total": 16, "rejected": 12, "need_more_info": 2, "complied": 2, "pending": 0}, "political": {"total": 46, "rejected": 39, "need_more_info": 7, "complied": 0, "pending": 0}}} },
+  
+  "LV": { "name": "Lettland", "requests": {"all": {"total": 883, "rejected": 368, "need_more_info": 128, "complied": 294, "pending": 35}, "issues": {"serious_crime": {"total": 17, "rejected": 17, "need_more_info": 0, "complied": 0, "pending": 0}, "public_figure": {"total": 3, "rejected": 3, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 797, "rejected": 343, "need_more_info": 124, "complied": 293, "pending": 35}, "cp": {"total": 1, "rejected": 0, "need_more_info": 1, "complied": 0, "pending": 0}, "political": {"total": 8, "rejected": 5, "need_more_info": 1, "complied": 2, "pending": 0}}}, "urls": {"all": {"total": 3951, "rejected": 2267, "need_more_info": 474, "complied": 946, "pending": 254}, "issues": {"serious_crime": {"total": 32, "rejected": 32, "need_more_info": 0, "complied": 0, "pending": 0}, "public_figure": {"total": 45, "rejected": 45, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 3847, "rejected": 2176, "need_more_info": 462, "complied": 945, "pending": 254}, "cp": {"total": 1, "rejected": 0, "need_more_info": 1, "complied": 0, "pending": 0}, "political": {"total": 23, "rejected": 18, "need_more_info": 1, "complied": 4, "pending": 0}}} },
+  
+  "LU": { "name": "Luxemburg", "requests": {"all": {"total": 326, "rejected": 104, "need_more_info": 37, "complied": 133, "pending": 9}, "issues": {"serious_crime": {"total": 2, "rejected": 1, "need_more_info": 0, "complied": 1, "pending": 0}, "public_figure": {"total": 6, "rejected": 6, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 272, "rejected": 94, "need_more_info": 36, "complied": 132, "pending": 9}, "cp": {"total": 1, "rejected": 0, "need_more_info": 1, "complied": 0, "pending": 0}, "political": {"total": 2, "rejected": 2, "need_more_info": 0, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 925, "rejected": 421, "need_more_info": 114, "complied": 352, "pending": 29}, "issues": {"serious_crime": {"total": 6, "rejected": 5, "need_more_info": 0, "complied": 1, "pending": 0}, "public_figure": {"total": 35, "rejected": 35, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 872, "rejected": 371, "need_more_info": 112, "complied": 351, "pending": 29}, "cp": {"total": 4, "rejected": 2, "need_more_info": 2, "complied": 0, "pending": 0}, "political": {"total": 6, "rejected": 6, "need_more_info": 0, "complied": 0, "pending": 0}}} },
+  
+  "SK": { "name": "Slovakien", "requests": {"all": {"total": 907, "rejected": 346, "need_more_info": 121, "complied": 384, "pending": 4}, "issues": {"serious_crime": {"total": 5, "rejected": 3, "need_more_info": 1, "complied": 1, "pending": 0}, "public_figure": {"total": 12, "rejected": 9, "need_more_info": 1, "complied": 2, "pending": 0}, "private_personal_info": {"total": 831, "rejected": 327, "need_more_info": 119, "complied": 379, "pending": 4}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 8, "rejected": 7, "need_more_info": 0, "complied": 1, "pending": 0}}}, "urls": {"all": {"total": 3638, "rejected": 2031, "need_more_info": 432, "complied": 1125, "pending": 17}, "issues": {"serious_crime": {"total": 26, "rejected": 19, "need_more_info": 6, "complied": 1, "pending": 0}, "public_figure": {"total": 74, "rejected": 66, "need_more_info": 4, "complied": 4, "pending": 0}, "private_personal_info": {"total": 3476, "rejected": 1891, "need_more_info": 422, "complied": 1113, "pending": 17}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 58, "rejected": 55, "need_more_info": 0, "complied": 3, "pending": 0}}} },
+  
+  "NO": { "name": "Norge", "requests": {"all": {"total": 2215, "rejected": 771, "need_more_info": 401, "complied": 863, "pending": 87}, "issues": {"serious_crime": {"total": 69, "rejected": 39, "need_more_info": 17, "complied": 13, "pending": 0}, "public_figure": {"total": 43, "rejected": 27, "need_more_info": 5, "complied": 11, "pending": 0}, "private_personal_info": {"total": 1971, "rejected": 682, "need_more_info": 374, "complied": 828, "pending": 86}, "cp": {"total": 5, "rejected": 2, "need_more_info": 2, "complied": 0, "pending": 1}, "political": {"total": 28, "rejected": 18, "need_more_info": 2, "complied": 8, "pending": 0}}}, "urls": {"all": {"total": 9288, "rejected": 4489, "need_more_info": 1619, "complied": 2900, "pending": 249}, "issues": {"serious_crime": {"total": 352, "rejected": 251, "need_more_info": 68, "complied": 33, "pending": 0}, "public_figure": {"total": 390, "rejected": 305, "need_more_info": 8, "complied": 75, "pending": 0}, "private_personal_info": {"total": 8437, "rejected": 3864, "need_more_info": 1536, "complied": 2762, "pending": 248}, "cp": {"total": 15, "rejected": 12, "need_more_info": 2, "complied": 0, "pending": 1}, "political": {"total": 97, "rejected": 69, "need_more_info": 4, "complied": 24, "pending": 0}}} },
+  
+  "SE": { "name": "Sverige", "requests": {"all": {"total": 6401, "rejected": 2321, "need_more_info": 884, "complied": 2557, "pending": 177}, "issues": {"serious_crime": {"total": 81, "rejected": 55, "need_more_info": 7, "complied": 18, "pending": 1}, "public_figure": {"total": 67, "rejected": 52, "need_more_info": 0, "complied": 13, "pending": 2}, "private_personal_info": {"total": 5596, "rejected": 2109, "need_more_info": 848, "complied": 2458, "pending": 170}, "cp": {"total": 48, "rejected": 30, "need_more_info": 8, "complied": 7, "pending": 3}, "political": {"total": 63, "rejected": 43, "need_more_info": 9, "complied": 11, "pending": 0}}}, "urls": {"all": {"total": 25741, "rejected": 13741, "need_more_info": 3077, "complied": 8233, "pending": 614}, "issues": {"serious_crime": {"total": 369, "rejected": 291, "need_more_info": 19, "complied": 46, "pending": 13}, "public_figure": {"total": 385, "rejected": 339, "need_more_info": 10, "complied": 33, "pending": 3}, "private_personal_info": {"total": 23924, "rejected": 12435, "need_more_info": 2942, "complied": 7894, "pending": 578}, "cp": {"total": 236, "rejected": 163, "need_more_info": 19, "complied": 38, "pending": 16}, "political": {"total": 457, "rejected": 361, "need_more_info": 17, "complied": 79, "pending": 0}}} },
+  
+  "GR": { "name": "Grekland", "requests": {"all": {"total": 1233, "rejected": 408, "need_more_info": 232, "complied": 450, "pending": 29}, "issues": {"serious_crime": {"total": 9, "rejected": 5, "need_more_info": 2, "complied": 2, "pending": 0}, "public_figure": {"total": 65, "rejected": 19, "need_more_info": 4, "complied": 38, "pending": 4}, "private_personal_info": {"total": 1037, "rejected": 375, "need_more_info": 223, "complied": 409, "pending": 26}, "cp": {"total": 4, "rejected": 1, "need_more_info": 2, "complied": 0, "pending": 1}, "political": {"total": 13, "rejected": 8, "need_more_info": 3, "complied": 2, "pending": 0}}}, "urls": {"all": {"total": 5718, "rejected": 3041, "need_more_info": 1293, "complied": 1170, "pending": 88}, "issues": {"serious_crime": {"total": 299, "rejected": 274, "need_more_info": 17, "complied": 8, "pending": 0}, "public_figure": {"total": 296, "rejected": 130, "need_more_info": 100, "complied": 60, "pending": 6}, "private_personal_info": {"total": 5090, "rejected": 2617, "need_more_info": 1168, "complied": 1100, "pending": 79}, "cp": {"total": 13, "rejected": 3, "need_more_info": 5, "complied": 0, "pending": 5}, "political": {"total": 55, "rejected": 42, "need_more_info": 6, "complied": 7, "pending": 0}}} },
+  
+  "DK": { "name": "Danmark", "requests": {"all": {"total": 2157, "rejected": 742, "need_more_info": 313, "complied": 941, "pending": 67}, "issues": {"serious_crime": {"total": 28, "rejected": 20, "need_more_info": 2, "complied": 5, "pending": 1}, "public_figure": {"total": 6, "rejected": 4, "need_more_info": 2, "complied": 0, "pending": 0}, "private_personal_info": {"total": 1999, "rejected": 698, "need_more_info": 304, "complied": 929, "pending": 65}, "cp": {"total": 13, "rejected": 7, "need_more_info": 2, "complied": 4, "pending": 0}, "political": {"total": 16, "rejected": 12, "need_more_info": 2, "complied": 2, "pending": 0}}}, "urls": {"all": {"total": 7449, "rejected": 3538, "need_more_info": 1087, "complied": 2512, "pending": 187}, "issues": {"serious_crime": {"total": 84, "rejected": 70, "need_more_info": 3, "complied": 10, "pending": 1}, "public_figure": {"total": 17, "rejected": 14, "need_more_info": 3, "complied": 0, "pending": 0}, "private_personal_info": {"total": 7120, "rejected": 3266, "need_more_info": 1065, "complied": 2480, "pending": 184}, "cp": {"total": 113, "rejected": 91, "need_more_info": 7, "complied": 15, "pending": 0}, "political": {"total": 104, "rejected": 96, "need_more_info": 2, "complied": 6, "pending": 0}}} },
+  
+  "FR": { "name": "Frankrike", "requests": {"all": {"total": 43228, "rejected": 12251, "need_more_info": 5418, "complied": 22333, "pending": 941}, "issues": {"serious_crime": {"total": 237, "rejected": 162, "need_more_info": 23, "complied": 46, "pending": 5}, "public_figure": {"total": 186, "rejected": 131, "need_more_info": 17, "complied": 32, "pending": 6}, "private_personal_info": {"total": 40153, "rejected": 11704, "need_more_info": 5337, "complied": 22071, "pending": 928}, "cp": {"total": 99, "rejected": 72, "need_more_info": 8, "complied": 19, "pending": 0}, "political": {"total": 223, "rejected": 139, "need_more_info": 17, "complied": 66, "pending": 1}}}, "urls": {"all": {"total": 144358, "rejected": 61087, "need_more_info": 20191, "complied": 57071, "pending": 2949}, "issues": {"serious_crime": {"total": 862, "rejected": 681, "need_more_info": 59, "complied": 112, "pending": 8}, "public_figure": {"total": 874, "rejected": 670, "need_more_info": 60, "complied": 86, "pending": 26}, "private_personal_info": {"total": 140436, "rejected": 58376, "need_more_info": 19938, "complied": 56302, "pending": 2897}, "cp": {"total": 455, "rejected": 360, "need_more_info": 17, "complied": 61, "pending": 11}, "political": {"total": 1230, "rejected": 886, "need_more_info": 70, "complied": 184, "pending": 6}}} },
+  
+  "FI": { "name": "Finland", "requests": {"all": {"total": 3039, "rejected": 1032, "need_more_info": 376, "complied": 1330, "pending": 133}, "issues": {"serious_crime": {"total": 44, "rejected": 38, "need_more_info": 3, "complied": 3, "pending": 0}, "public_figure": {"total": 26, "rejected": 16, "need_more_info": 1, "complied": 8, "pending": 1}, "private_personal_info": {"total": 2747, "rejected": 938, "need_more_info": 363, "complied": 1308, "pending": 131}, "cp": {"total": 34, "rejected": 22, "need_more_info": 5, "complied": 6, "pending": 1}, "political": {"total": 24, "rejected": 19, "need_more_info": 1, "complied": 4, "pending": 0}}}, "urls": {"all": {"total": 9986, "rejected": 4756, "need_more_info": 1061, "complied": 3786, "pending": 320}, "issues": {"serious_crime": {"total": 162, "rejected": 148, "need_more_info": 5, "complied": 7, "pending": 2}, "public_figure": {"total": 192, "rejected": 162, "need_more_info": 3, "complied": 20, "pending": 3}, "private_personal_info": {"total": 9347, "rejected": 4216, "need_more_info": 1031, "complied": 3727, "pending": 314}, "cp": {"total": 151, "rejected": 123, "need_more_info": 8, "complied": 19, "pending": 1}, "political": {"total": 146, "rejected": 129, "need_more_info": 5, "complied": 12, "pending": 0}}} },
+  
+  "DE": { "name": "Tyskland", "requests": {"all": {"total": 36062, "rejected": 11124, "need_more_info": 3808, "complied": 17830, "pending": 924}, "issues": {"serious_crime": {"total": 148, "rejected": 82, "need_more_info": 25, "complied": 38, "pending": 3}, "public_figure": {"total": 337, "rejected": 229, "need_more_info": 15, "complied": 91, "pending": 2}, "private_personal_info": {"total": 32868, "rejected": 10620, "need_more_info": 3730, "complied": 17506, "pending": 909}, "cp": {"total": 90, "rejected": 42, "need_more_info": 15, "complied": 29, "pending": 3}, "political": {"total": 261, "rejected": 141, "need_more_info": 18, "complied": 95, "pending": 6}}}, "urls": {"all": {"total": 135588, "rejected": 57410, "need_more_info": 14639, "complied": 56783, "pending": 5563}, "issues": {"serious_crime": {"total": 721, "rejected": 516, "need_more_info": 70, "complied": 130, "pending": 3}, "public_figure": {"total": 2799, "rejected": 2099, "need_more_info": 174, "complied": 510, "pending": 7}, "private_personal_info": {"total": 130259, "rejected": 53762, "need_more_info": 14308, "complied": 55515, "pending": 5514}, "cp": {"total": 465, "rejected": 250, "need_more_info": 58, "complied": 139, "pending": 10}, "political": {"total": 1232, "rejected": 860, "need_more_info": 53, "complied": 294, "pending": 17}}} },
+  
+  "CY": { "name": "Cypern", "requests": {"all": {"total": 195, "rejected": 49, "need_more_info": 30, "complied": 67, "pending": 4}, "issues": {"serious_crime": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 150, "rejected": 48, "need_more_info": 30, "complied": 67, "pending": 4}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 2, "rejected": 2, "need_more_info": 0, "complied": 0, "pending": 0}}}, "urls": {"all": {"total": 550, "rejected": 204, "need_more_info": 148, "complied": 178, "pending": 8}, "issues": {"serious_crime": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "public_figure": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "private_personal_info": {"total": 549, "rejected": 203, "need_more_info": 148, "complied": 178, "pending": 8}, "cp": {"total": 0, "rejected": 0, "need_more_info": 0, "complied": 0, "pending": 0}, "political": {"total": 3, "rejected": 3, "need_more_info": 0, "complied": 0, "pending": 0}}} }
+  }
+
+  
+
+  
+  var LOCALIZED_COUNTRIES = [{"id": "BE", "name": "Belgien"}, {"id": "BG", "name": "Bulgarien"}, {"id": "CY", "name": "Cypern"}, {"id": "DK", "name": "Danmark"}, {"id": "EE", "name": "Estland"}, {"id": "FI", "name": "Finland"}, {"id": "FR", "name": "Frankrike"}, {"id": "GR", "name": "Grekland"}, {"id": "IE", "name": "Irland"}, {"id": "IS", "name": "Island"}, {"id": "IT", "name": "Italien"}, {"id": "HR", "name": "Kroatien"}, {"id": "LV", "name": "Lettland"}, {"id": "LI", "name": "Liechtenstein"}, {"id": "LT", "name": "Litauen"}, {"id": "LU", "name": "Luxemburg"}, {"id": "MT", "name": "Malta"}, {"id": "NL", "name": "Nederl\u00e4nderna"}, {"id": "NO", "name": "Norge"}, {"id": "PL", "name": "Polen"}, {"id": "PT", "name": "Portugal"}, {"id": "RO", "name": "Rum\u00e4nien"}, {"id": "CH", "name": "Schweiz"}, {"id": "SK", "name": "Slovakien"}, {"id": "SI", "name": "Slovenien"}, {"id": "ES", "name": "Spanien"}, {"id": "GB", "name": "Storbritannien"}, {"id": "SE", "name": "Sverige"}, {"id": "CZ", "name": "Tjeckien"}, {"id": "DE", "name": "Tyskland"}, {"id": "HU", "name": "Ungern"}, {"id": "AT", "name": "\u00d6sterrike"}];
+
+  var DATA_LABELS = {
+      "rejected": "Webbadresser som inte har tagits bort",
+      "complied": "Webbadresser som har tagits bort",
+      "all_countries": "Alla länder",
+      "other_countries": "Övriga länder"
+    };
+  
+  var RTL = false;
+      </script><script src="/web/20150208173819js_/http://www.google.com/jsapi">
+</script><script src="/web/20150208173819js_/http://www.google.com/transparencyreport/removals/europeprivacy/js/main.js?hl=sv">
+</script>
+    </div>
+    <div id="maia-signature"></div>
+    <div class="maia-footer" id="maia-footer">
+      <div id="maia-footer-local">
+        <div class="maia-aux">
+          <a href="#" id="maia-feedback" onclick=
+          "try{ userfeedback.api.startFeedback({ 'productId': 73890, 'locale': 'sv', 'bucket': 'External - Name removals'}); return false; }catch(e){}">
+          Skicka feedback</a>
+        </div>
+      </div>
+      <div id="maia-footer-global">
+        <div class="maia-aux">
+          <div class="maia-locales">
+            <select onchange="window.location.search = '?hl=' + this.value;">
+              <option value="ar">
+                Arabiska – العربية
+              </option>
+              <option value="bg">
+                Bulgariska – Български
+              </option>
+              <option value="da">
+                Danska – Dansk
+              </option>
+              <option value="en-GB">
+                Engelska (Storbritannien) – English (United Kingdom)
+              </option>
+              <option value="en-US">
+                Engelska (Usa) – English (United States)
+              </option>
+              <option value="fil">
+                Filippinska – Filipino
+              </option>
+              <option value="fi">
+                Finska – Suomi
+              </option>
+              <option value="fr">
+                Franska – Français
+              </option>
+              <option value="el">
+                Grekiska – Ελληνικά
+              </option>
+              <option value="iw">
+                Hebreiska – עברית
+              </option>
+              <option value="hi">
+                Hindi – हिन्दी
+              </option>
+              <option value="id">
+                Indonesiska – Bahasa Indonesia
+              </option>
+              <option value="it">
+                Italienska – Italiano
+              </option>
+              <option value="ja">
+                Japanska – 日本語
+              </option>
+              <option value="ca">
+                Katalanska – Català
+              </option>
+              <option value="zh-CN">
+                Kinesiska (Förenklade) – 中文（简体中文）
+              </option>
+              <option value="zh-TW">
+                Kinesiska (Traditionella) – 中文（繁體中文）
+              </option>
+              <option value="ko">
+                Koreanska – 한국어
+              </option>
+              <option value="hr">
+                Kroatiska – Hrvatski
+              </option>
+              <option value="lv">
+                Lettiska – Latviešu
+              </option>
+              <option value="lt">
+                Litauiska – Lietuvių
+              </option>
+              <option value="nl">
+                Nederländska – Nederlands
+              </option>
+              <option value="no">
+                Norska – Norsk
+              </option>
+              <option value="fa">
+                Persiska – فارسی
+              </option>
+              <option value="pl">
+                Polska – Polski
+              </option>
+              <option value="pt-BR">
+                Portugisiska (Brasilien) – Português (Brasil)
+              </option>
+              <option value="pt-PT">
+                Portugisiska (Portugal) – Português (Portugal)
+              </option>
+              <option value="ro">
+                Rumänska – Română
+              </option>
+              <option value="ru">
+                Ryska – Русский
+              </option>
+              <option value="sr">
+                Serbiska – Српски
+              </option>
+              <option value="sk">
+                Slovakiska – Slovenčina
+              </option>
+              <option value="sl">
+                Slovenska – Slovenščina
+              </option>
+              <option value="es">
+                Spanska – Español
+              </option>
+              <option value="es-419">
+                Spanska (Latinamerika) – Español (Latinoamérica)
+              </option>
+              <option selected value="sv">
+                Svenska
+              </option>
+              <option value="th">
+                Thailändska – ไทย
+              </option>
+              <option value="cs">
+                Tjeckiska – Čeština
+              </option>
+              <option value="tr">
+                Turkiska – Türkçe
+              </option>
+              <option value="de">
+                Tyska – Deutsch
+              </option>
+              <option value="uk">
+                Ukrainska – Українська
+              </option>
+              <option value="hu">
+                Ungerska – Magyar
+              </option>
+              <option value="vi">
+                Vietnamesiska – Tiếng Việt
+              </option>
+            </select>
+          </div>
+          <ul>
+            <li>
+              <a href="/web/20150208173819/http://www.google.com/">Google</a>
+            </li>
+            <li>
+              <a href="/web/20150208173819/http://www.google.com/intl/sv/about/">Om Google</a>
+            </li>
+            <li>
+              <a href="/web/20150208173819/http://www.google.com/intl/sv/policies/privacy/">Sekretess</a>
+            </li>
+            <li>
+              <a href="/web/20150208173819/http://www.google.com/intl/sv/policies/terms/">Villkor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><script src="/web/20150208173819js_/http://www.gstatic.com/feedback/api.js">
+</script><script src="/web/20150208173819js_/http://www.google.com/js/maia.js">
+</script>
+  </body>
+</html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 17:38:19 Feb 8, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 0:27:00 Jul 21, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
